@@ -1,8 +1,24 @@
 aid: patientping
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/patientping.png
 name: PatientPing
-description: 'PatientPing is a company surfaced as a portfolio company of a16z, gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: bio-healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'PatientPing is a real-time care-coordination network that delivers e-notifications
+  ("Pings") and ADT-based admission, discharge, and transfer alerts across hospitals, post-acute
+  facilities, health plans, pharmacies, and community providers. Its Route solution helps hospitals
+  meet the CMS Interoperability and Patient Access Rule e-notifications Condition of Participation.
+  PatientPing was acquired by Appriss Health in 2021 and rebranded as Bamboo Health; patientping.com
+  now redirects to bamboohealth.com. No public developer portal or API documentation is published —
+  clinical integration is handled privately via HL7/ADT data feeds embedded in provider workflow.'
 url: https://raw.githubusercontent.com/api-evangelist/patientping/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +27,18 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-current-name: Bamboo Health
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Bio Healthcare
+- Care Coordination
+- Health IT
+- Interoperability
+- Notifications
+- HL7 ADT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/patientping-domain-security.yml
 - type: Website
   url: https://patientping.com
+- type: Login
+  url: https://my.patientping.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
